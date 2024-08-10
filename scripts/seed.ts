@@ -234,6 +234,222 @@ const main = async () => {
             },
         ]);
 
+        await db.insert(schema.challenges).values([
+            {
+              id: 7,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'What is the capital of Nigeria?',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 7,
+                correct: true,
+                text: "Abuja",
+                audioSrc: "/abuja.mp3",
+            },
+            {
+                challengeId: 7,
+                correct: false,
+                text: "kagseer",
+                audioSrc: "/kagseer.mp3",
+            },
+            {
+                challengeId: 7,
+                correct: false,
+                text: "olujudi",
+                audioSrc: "/olujudi.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+              id: 8,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'Most people in Nigeria are from what religion?',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 8,
+                correct: false,
+                text: "Protestant",
+                audioSrc: "/Protestant.mp3",
+            },
+            {
+                challengeId: 8,
+                correct: true,
+                text: "Sunni Islam",
+                audioSrc: "/SunniIslam.mp3",
+            },
+            {
+                challengeId: 8,
+                correct: false,
+                text: "indigenous",
+                audioSrc: "/indigenous.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+              id: 9,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'Nigeria is divided into 36 states. Which one is the largest by area?',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 9,
+                correct: false,
+                text: "Kwara State",
+                audioSrc: "/KwaraState.mp3",
+            },
+            {
+                challengeId: 9,
+                correct: false,
+                text: "Adamawa State",
+                audioSrc: "/AdamawaState.mp3",
+            },
+            {
+                challengeId: 9,
+                correct: true,
+                text: "Niger State",
+                audioSrc: "/NigerState.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+              id: 10,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'Nigeria adopted what currency in 1973? Nigeria still uses this currency.',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 10,
+                correct: false,
+                text: "peso",
+                audioSrc: "/peso.mp3",
+            },
+            {
+                challengeId: 10,
+                correct: false,
+                text: "dollar",
+                audioSrc: "/dollar.mp3",
+            },
+            {
+                challengeId: 10,
+                correct: true,
+                text: "Naira",
+                audioSrc: "/Naira.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+              id: 11,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'Nigerias national sport is one of the most watched in the world. What is it?',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 11,
+                correct: true,
+                text: "soccer",
+                audioSrc: "/soccer.mp3",
+            },
+            {
+                challengeId: 11,
+                correct: false,
+                text: "basketball",
+                audioSrc: "/basketball.mp3",
+            },
+            {
+                challengeId: 11,
+                correct: false,
+                text: "ping pong",
+                audioSrc: "/pingpong.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+              id: 12,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'Whats the highest point in Nigeria?',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 12,
+                correct: true,
+                text: "Chappal Waddi",
+                audioSrc: "/ChappalWaddi.mp3",
+            },
+            {
+                challengeId: 12,
+                correct: false,
+                text: "mount naji",
+                audioSrc: "/mountnaji.mp3",
+            },
+            {
+                challengeId: 12,
+                correct: false,
+                text: "mount chicanci",
+                audioSrc: "/mountchicanci.mp3",
+            },
+        ]);
+
+        await db.insert(schema.challenges).values([
+            {
+              id: 13,
+              lessonId: 2, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'Which phrase means trouble?',
+            },
+        ]);
+
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 13,
+                correct: true,
+                text: "Wahala",
+                audioSrc: "/Wahala.mp3",
+            },
+            {
+                challengeId: 13,
+                correct: false,
+                text: "kelode",
+                audioSrc: "/kelode.mp3",
+            },
+            {
+                challengeId: 13,
+                correct: false,
+                text: "bowone",
+                audioSrc: "/bowone.mp3",
+            },
+        ]);
         console.log("Seeding finished")
     } catch (error) {
         console.error(error);
