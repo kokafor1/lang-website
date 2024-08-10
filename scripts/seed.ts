@@ -239,7 +239,7 @@ const main = async () => {
               id: 7,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 7,
               question: 'What is the capital of Nigeria?',
             },
         ]);
@@ -270,7 +270,7 @@ const main = async () => {
               id: 8,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 8,
               question: 'Most people in Nigeria are from what religion?',
             },
         ]);
@@ -301,7 +301,7 @@ const main = async () => {
               id: 9,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 9,
               question: 'Nigeria is divided into 36 states. Which one is the largest by area?',
             },
         ]);
@@ -332,7 +332,7 @@ const main = async () => {
               id: 10,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 10,
               question: 'Nigeria adopted what currency in 1973? Nigeria still uses this currency.',
             },
         ]);
@@ -363,7 +363,7 @@ const main = async () => {
               id: 11,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 11,
               question: 'Nigerias national sport is one of the most watched in the world. What is it?',
             },
         ]);
@@ -394,7 +394,7 @@ const main = async () => {
               id: 12,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 12,
               question: 'Whats the highest point in Nigeria?',
             },
         ]);
@@ -425,7 +425,7 @@ const main = async () => {
               id: 13,
               lessonId: 2, // Verbs
               type: "SELECT",
-              order: 1,
+              order: 13,
               question: 'Which phrase means trouble?',
             },
         ]);
