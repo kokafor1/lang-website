@@ -51,6 +51,48 @@ const main = async () => {
                 order: 2,
                 title: "Verbs",
             },
+            {
+                id: 3,
+                unitId: 1,
+                order: 3,
+                title: "Verbs",
+            },
+            {
+                id: 4,
+                unitId: 1,
+                order: 4,
+                title: "Verbs",
+            },
+            {
+                id: 5,
+                unitId: 1,
+                order: 5,
+                title: "Verbs",
+            },
+            {
+                id: 6,
+                unitId: 1,
+                order: 6,
+                title: "Verbs",
+            },
+            {
+                id: 7,
+                unitId: 1,
+                order: 7,
+                title: "Verbs",
+            },
+            {
+                id: 8,
+                unitId: 1,
+                order: 8,
+                title: "Verbs",
+            },
+            {
+                id: 9,
+                unitId: 1,
+                order: 9,
+                title: "Verbs",
+            },
         ]);
 
         await db.insert(schema.challenges).values([
@@ -237,9 +279,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 7,
-              lessonId: 2, // Verbs
+              lessonId: 3, // Verbs
               type: "SELECT",
-              order: 7,
+              order: 1,
               question: 'What is the capital of Nigeria?',
             },
         ]);
@@ -268,9 +310,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 8,
-              lessonId: 2, // Verbs
+              lessonId: 4, // Verbs
               type: "SELECT",
-              order: 8,
+              order: 1,
               question: 'Most people in Nigeria are from what religion?',
             },
         ]);
@@ -299,9 +341,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 9,
-              lessonId: 2, // Verbs
+              lessonId: 5, // Verbs
               type: "SELECT",
-              order: 9,
+              order: 1,
               question: 'Nigeria is divided into 36 states. Which one is the largest by area?',
             },
         ]);
@@ -330,9 +372,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 10,
-              lessonId: 2, // Verbs
+              lessonId: 6, // Verbs
               type: "SELECT",
-              order: 10,
+              order: 1,
               question: 'Nigeria adopted what currency in 1973? Nigeria still uses this currency.',
             },
         ]);
@@ -361,9 +403,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 11,
-              lessonId: 2, // Verbs
+              lessonId: 7, // Verbs
               type: "SELECT",
-              order: 11,
+              order: 1,
               question: 'Nigerias national sport is one of the most watched in the world. What is it?',
             },
         ]);
@@ -392,9 +434,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 12,
-              lessonId: 2, // Verbs
+              lessonId: 8, // Verbs
               type: "SELECT",
-              order: 12,
+              order: 1,
               question: 'Whats the highest point in Nigeria?',
             },
         ]);
@@ -423,9 +465,9 @@ const main = async () => {
         await db.insert(schema.challenges).values([
             {
               id: 13,
-              lessonId: 2, // Verbs
+              lessonId: 9, // Verbs
               type: "SELECT",
-              order: 13,
+              order: 1,
               question: 'Which phrase means trouble?',
             },
         ]);
