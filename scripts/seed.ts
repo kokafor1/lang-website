@@ -75,24 +75,6 @@ const main = async () => {
                 order: 6,
                 title: "Verbs",
             },
-            {
-                id: 7,
-                unitId: 1,
-                order: 7,
-                title: "Verbs",
-            },
-            {
-                id: 8,
-                unitId: 1,
-                order: 8,
-                title: "Verbs",
-            },
-            {
-                id: 9,
-                unitId: 1,
-                order: 9,
-                title: "Verbs",
-            },
         ]);
 
         await db.insert(schema.challenges).values([
@@ -202,7 +184,7 @@ const main = async () => {
               lessonId: 2, // Verbs
               type: "ASSIST",
               order: 2,
-              question: 'Who is the president?',
+              question: 'How do you say goodbye?',
             },
             {
               id: 6,
@@ -236,22 +218,22 @@ const main = async () => {
 
         await db.insert(schema.challengeOptions).values([
             {
-                challengeId: 5,
-                correct: false,
-                text: "Joe biden",
-                audioSrc: "/Joeb.mp3",
-            },
-            {
-                challengeId: 5,
+                challengeId: 4,
                 correct: true,
-                text: "Bola Ahmed Tinubu",
-                audioSrc: "/wpres.mp3",
+                text: "Ka ọ dị",
+                audioSrc: "/goodbye.mp3",
             },
             {
-                challengeId: 5,
+                challengeId: 4,
                 correct: false,
-                text: "Hakeem Olajuwon",
-                audioSrc: "/hkeem.mp3",
+                text: "ka ahụ ma emechaa",
+                audioSrc: "/seeulater.mp3",
+            },
+            {
+                challengeId: 4,
+                correct: false,
+                text: "Nnọọ",
+                audioSrc: "/hello.mp3",
             },
         ]);
 
@@ -282,7 +264,21 @@ const main = async () => {
               lessonId: 3, // Verbs
               type: "SELECT",
               order: 1,
-              question: 'What is the capital of Nigeria?',
+              question: 'How do you say outside?',
+            },
+            {
+                id: 8,
+                lessonId: 3, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: 'How do you say inside?',
+            },
+            {
+                id: 9,
+                lessonId: 3, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: 'How do you say above?',
             },
         ]);
 
@@ -290,30 +286,20 @@ const main = async () => {
             {
                 challengeId: 7,
                 correct: true,
-                text: "Abuja",
-                audioSrc: "/abuja.mp3",
+                text: "n'èzí",
+                audioSrc: "/n'èzí.mp3",
             },
             {
                 challengeId: 7,
                 correct: false,
-                text: "kagseer",
-                audioSrc: "/kagseer.mp3",
+                text: "n'ime",
+                audioSrc: "/n'ime.mp3",
             },
             {
                 challengeId: 7,
                 correct: false,
-                text: "olujudi",
-                audioSrc: "/olujudi.mp3",
-            },
-        ]);
-
-        await db.insert(schema.challenges).values([
-            {
-              id: 8,
-              lessonId: 4, // Verbs
-              type: "SELECT",
-              order: 1,
-              question: 'Most people in Nigeria are from what religion?',
+                text: "n'elu",
+                audioSrc: "/n'elu.mp3",
             },
         ]);
 
@@ -321,177 +307,210 @@ const main = async () => {
             {
                 challengeId: 8,
                 correct: false,
-                text: "Protestant",
-                audioSrc: "/Protestant.mp3",
+                text: "n'èzí",
+                audioSrc: "/n'èzí.mp3",
             },
             {
                 challengeId: 8,
                 correct: true,
-                text: "Sunni Islam",
-                audioSrc: "/SunniIslam.mp3",
+                text: "n'ime",
+                audioSrc: "/n'ime.mp3",
             },
             {
                 challengeId: 8,
                 correct: false,
-                text: "indigenous",
-                audioSrc: "/indigenous.mp3",
+                text: "n'elu",
+                audioSrc: "/n'elu.mp3",
             },
         ]);
-
-        await db.insert(schema.challenges).values([
-            {
-              id: 9,
-              lessonId: 5, // Verbs
-              type: "SELECT",
-              order: 1,
-              question: 'Nigeria is divided into 36 states. Which one is the largest by area?',
-            },
-        ]);
-
         await db.insert(schema.challengeOptions).values([
             {
                 challengeId: 9,
                 correct: false,
-                text: "Kwara State",
-                audioSrc: "/KwaraState.mp3",
+                text: "n'èzí",
+                audioSrc: "/n'èzí.mp3",
             },
             {
                 challengeId: 9,
                 correct: false,
-                text: "Adamawa State",
-                audioSrc: "/AdamawaState.mp3",
+                text: "n'ime",
+                audioSrc: "/n'ime.mp3",
             },
             {
                 challengeId: 9,
                 correct: true,
-                text: "Niger State",
-                audioSrc: "/NigerState.mp3",
+                text: "n'elu",
+                audioSrc: "/n'elu.mp3",
             },
         ]);
 
         await db.insert(schema.challenges).values([
             {
               id: 10,
-              lessonId: 6, // Verbs
+              lessonId: 4, // Verbs
               type: "SELECT",
               order: 1,
-              question: 'Nigeria adopted what currency in 1973? Nigeria still uses this currency.',
+              question: 'How do you say shirt?',
+            },
+            {
+                id: 11,
+                lessonId: 4, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: 'How do you say pants?',
+            },
+            {
+                id: 12,
+                lessonId: 4, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: 'How do you say shorts?',
             },
         ]);
-
         await db.insert(schema.challengeOptions).values([
             {
                 challengeId: 10,
                 correct: false,
-                text: "peso",
-                audioSrc: "/peso.mp3",
+                text: "uwe elu",
+                audioSrc: "/shirt.mp3",
             },
             {
                 challengeId: 10,
                 correct: false,
-                text: "dollar",
-                audioSrc: "/dollar.mp3",
+                text: "uwe ogologo ọkpa",
+                audioSrc: "/pants.mp3",
             },
             {
                 challengeId: 10,
                 correct: true,
-                text: "Naira",
-                audioSrc: "/Naira.mp3",
+                text: "mkpirisi",
+                audioSrc: "/shorts.mp3",
             },
         ]);
-
-        await db.insert(schema.challenges).values([
-            {
-              id: 11,
-              lessonId: 7, // Verbs
-              type: "SELECT",
-              order: 1,
-              question: 'Nigerias national sport is one of the most watched in the world. What is it?',
-            },
-        ]);
-
         await db.insert(schema.challengeOptions).values([
             {
                 challengeId: 11,
+                correct: false,
+                text: "uwe elu",
+                audioSrc: "/shirt.mp3",
+            },
+            {
+                challengeId: 11,
                 correct: true,
-                text: "soccer",
-                audioSrc: "/soccer.mp3",
+                text: "uwe ogologo ọkpa",
+                audioSrc: "/pants.mp3",
             },
             {
                 challengeId: 11,
                 correct: false,
-                text: "basketball",
-                audioSrc: "/basketball.mp3",
-            },
-            {
-                challengeId: 11,
-                correct: false,
-                text: "ping pong",
-                audioSrc: "/pingpong.mp3",
+                text: "mkpirisi",
+                audioSrc: "/shorts.mp3",
             },
         ]);
-
-        await db.insert(schema.challenges).values([
-            {
-              id: 12,
-              lessonId: 8, // Verbs
-              type: "SELECT",
-              order: 1,
-              question: 'Whats the highest point in Nigeria?',
-            },
-        ]);
-
         await db.insert(schema.challengeOptions).values([
             {
                 challengeId: 12,
                 correct: true,
-                text: "Chappal Waddi",
-                audioSrc: "/ChappalWaddi.mp3",
+                text: "uwe elu",
+                audioSrc: "/shirt.mp3",
             },
             {
                 challengeId: 12,
                 correct: false,
-                text: "mount naji",
-                audioSrc: "/mountnaji.mp3",
+                text: "uwe ogologo ọkpa",
+                audioSrc: "/pants.mp3",
             },
             {
                 challengeId: 12,
                 correct: false,
-                text: "mount chicanci",
-                audioSrc: "/mountchicanci.mp3",
+                text: "mkpirisi",
+                audioSrc: "/shorts.mp3",
             },
         ]);
-
         await db.insert(schema.challenges).values([
             {
               id: 13,
-              lessonId: 9, // Verbs
+              lessonId: 5, // Verbs
               type: "SELECT",
               order: 1,
-              question: 'Which phrase means trouble?',
+              question: 'How do you say I love you?',
+            },
+            {
+                id: 14,
+                lessonId: 5, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: 'How do you say I hate you?',
+            },
+            {
+                id: 15,
+                lessonId: 5, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: 'How do you say I miss you?',
             },
         ]);
-
         await db.insert(schema.challengeOptions).values([
             {
                 challengeId: 13,
+                correct: false,
+                text: "akpọrọ gị m asị",
+                audioSrc: "/ihy.mp3",
+            },
+            {
+                challengeId: 13,
+                correct: false,
+                text: "a na m atụ ụche gị",
+                audioSrc: "/imy.mp3",
+            },
+            {
+                challengeId: 13,
                 correct: true,
-                text: "Wahala",
-                audioSrc: "/Wahala.mp3",
-            },
-            {
-                challengeId: 13,
-                correct: false,
-                text: "kelode",
-                audioSrc: "/kelode.mp3",
-            },
-            {
-                challengeId: 13,
-                correct: false,
-                text: "bowone",
-                audioSrc: "/bowone.mp3",
+                text: "a hụrụ m gị n'anya",
+                audioSrc: "/ily.mp3",
             },
         ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 14,
+                correct: false,
+                text: "a na m atụ ụche gị",
+                audioSrc: "/imy.mp3",
+            },
+            {
+                challengeId: 14,
+                correct: true,
+                text: "akpọrọ gị m asị",
+                audioSrc: "/ihy.mp3",
+            },
+            {
+                challengeId: 14,
+                correct: false,
+                text: "a hụrụ m gị n'anya",
+                audioSrc: "/ily.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 15,
+                correct: false,
+                text: "a na m atụ ụche gị",
+                audioSrc: "/imy.mp3",
+            },
+            {
+                challengeId: 15,
+                correct: false,
+                text: "akpọrọ gị m asị",
+                audioSrc: "/ihy.mp3",
+            },
+            {
+                challengeId: 15,
+                correct: true,
+                text: "a hụrụ m gị n'anya",
+                audioSrc: "/ily.mp3",
+            },
+        ]);
+
         console.log("Seeding finished")
     } catch (error) {
         console.error(error);
