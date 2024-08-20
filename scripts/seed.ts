@@ -510,6 +510,169 @@ const main = async () => {
                 audioSrc: "/ily.mp3",
             },
         ]);
+        await db.insert(schema.challenges).values([
+            {
+              id: 16,
+              lessonId: 6, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: 'How do you say white?',
+            },
+            {
+                id: 17,
+                lessonId: 6, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: 'How do you say black?',
+            },
+            {
+                id: 18,
+                lessonId: 6, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: 'How do you say brown?',
+            },
+            {
+                id: 19,
+                lessonId: 6, // Verbs
+                type: "SELECT",
+                order: 4,
+                question: 'How do you say blue?',
+            },
+            {
+                id: 20,
+                lessonId: 6, // Verbs
+                type: "SELECT",
+                order: 5,
+                question: 'How do you say red?',
+            },{
+                id: 21,
+                lessonId: 6, // Verbs
+                type: "SELECT",
+                order: 6,
+                question: 'How do you say green?',
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 16,
+                correct: true,
+                text: "ọcha",
+                audioSrc: "/white.mp3",
+            },
+            {
+                challengeId: 16,
+                correct: false,
+                text: "nwa",
+                audioSrc: "/black.mp3",
+            },
+            {
+                challengeId: 16,
+                correct: false,
+                text: "agba aja aja",
+                audioSrc: "/brown.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 17,
+                correct: false,
+                text: "agba aja aja",
+                audioSrc: "/brown.mp3",
+            },
+            {
+                challengeId: 17,
+                correct: false,
+                text: "ọcha",
+                audioSrc: "/white.mp3",
+            },
+            {
+                challengeId: 17,
+                correct: true,
+                text: "nwa",
+                audioSrc: "/black.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 18,
+                correct: true,
+                text: "agba aja aja",
+                audioSrc: "/brown.mp3",
+            },
+            {
+                challengeId: 18,
+                correct: false,
+                text: "ọcha",
+                audioSrc: "/white.mp3",
+            },
+            {
+                challengeId: 18,
+                correct: false,
+                text: "nwa",
+                audioSrc: "/black.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 19,
+                correct: false,
+                text: "akwụkwọ ndụ akwụkwọ ndụ",
+                audioSrc: "/green.mp3",
+            },
+            {
+                challengeId: 19,
+                correct: true,
+                text: "uhie",
+                audioSrc: "/red.mp3",
+            },
+            {
+                challengeId: 19,
+                correct: false,
+                text: "acha anụnụ anụnụ",
+                audioSrc: "/blue.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 20,
+                correct: false,
+                text: "akwụkwọ ndụ akwụkwọ ndụ",
+                audioSrc: "/green.mp3",
+            },
+            {
+                challengeId: 20,
+                correct: false,
+                text: "uhie",
+                audioSrc: "/red.mp3",
+            },
+            {
+                challengeId: 20,
+                correct: true,
+                text: "acha anụnụ anụnụ",
+                audioSrc: "/blue.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 21,
+                correct: true,
+                text: "akwụkwọ ndụ akwụkwọ ndụ",
+                audioSrc: "/green.mp3",
+            },
+            {
+                challengeId: 21,
+                correct: false,
+                text: "uhie",
+                audioSrc: "/red.mp3",
+            },
+            {
+                challengeId: 21,
+                correct: false,
+                text: "acha anụnụ anụnụ",
+                audioSrc: "/blue.mp3",
+            },
+        ]);
 
         console.log("Seeding finished")
     } catch (error) {
