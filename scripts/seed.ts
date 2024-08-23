@@ -218,19 +218,19 @@ const main = async () => {
 
         await db.insert(schema.challengeOptions).values([
             {
-                challengeId: 4,
+                challengeId: 5,
                 correct: true,
                 text: "Ka ọ dị",
                 audioSrc: "/goodbye.mp3",
             },
             {
-                challengeId: 4,
+                challengeId: 5,
                 correct: false,
                 text: "ka ahụ ma emechaa",
                 audioSrc: "/seeulater.mp3",
             },
             {
-                challengeId: 4,
+                challengeId: 5,
                 correct: false,
                 text: "Nnọọ",
                 audioSrc: "/hello.mp3",
