@@ -191,7 +191,7 @@ const main = async () => {
               lessonId: 2, // Verbs
               type: "SELECT",
               order: 3,
-              question: 'How do you say good morning?',
+              question: 'How do you say see you later?',
             },
           ]);
 
@@ -240,23 +240,44 @@ const main = async () => {
         await db.insert(schema.challengeOptions).values([
             {
                 challengeId: 6,
+                correct: false,
+                text: "Ka ọ dị",
+                audioSrc: "/goodbye.mp3",
+            },
+            {
+                challengeId: 6,
                 correct: true,
-                text: "ụtụtụ ọma",
-                audioSrc: "/gmorn.mp3",
+                text: "ka ahụ ma emechaa",
+                audioSrc: "/seeulater.mp3",
             },
             {
                 challengeId: 6,
                 correct: false,
-                text: "ka chifoo",
-                audioSrc: "/gnight.mp3",
-            },
-            {
-                challengeId: 6,
-                correct: false,
-                text: "ehihie ọma",
-                audioSrc: "/gafter.mp3",
+                text: "Nnọọ",
+                audioSrc: "/hello.mp3",
             },
         ]);
+
+        // await db.insert(schema.challengeOptions).values([
+        //     {
+        //         challengeId: 6,
+        //         correct: true,
+        //         text: "ụtụtụ ọma",
+        //         audioSrc: "/gmorn.mp3",
+        //     },
+        //     {
+        //         challengeId: 6,
+        //         correct: false,
+        //         text: "ka chifoo",
+        //         audioSrc: "/gnight.mp3",
+        //     },
+        //     {
+        //         challengeId: 6,
+        //         correct: false,
+        //         text: "ehihie ọma",
+        //         audioSrc: "/gafter.mp3",
+        //     },
+        // ]);
 
         await db.insert(schema.challenges).values([
             {
