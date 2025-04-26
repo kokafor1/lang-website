@@ -308,7 +308,7 @@ const main = async () => {
                 challengeId: 7,
                 correct: true,
                 text: "n'èzí",
-                audioSrc: "/n'èzí.mp3",
+                audioSrc: "/n'èzi.mp3",
             },
             {
                 challengeId: 7,

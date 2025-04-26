@@ -25,6 +25,8 @@ export const Unit = ({
     activeLesson,
     activeLessonPercentage
 }: Props) => {
+
+
     return (
         <>
             <UnitBanner title={title} description={description} />
