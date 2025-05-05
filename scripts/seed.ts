@@ -37,6 +37,16 @@ const main = async () => {
             },
         ]);
 
+        await db.insert(schema.units).values([
+            {
+                id: 2,
+                courseId: 1, //nigerian
+                title: "Unit 2",
+                description: "Advanced Igbo",
+                order: 2,
+            },
+        ]);
+
 
         await db.insert(schema.lessons).values([
             {
@@ -73,6 +83,30 @@ const main = async () => {
                 id: 6,
                 unitId: 1,
                 order: 6,
+                title: "Verbs",
+            },
+            {
+                id: 7,
+                unitId: 2,
+                order: 7,
+                title: "Verbs",
+            },
+            {
+                id: 8,
+                unitId: 2,
+                order: 8,
+                title: "Verbs",
+            },
+            {
+                id: 9,
+                unitId: 2,
+                order: 9,
+                title: "Verbs",
+            },
+            {
+                id: 10,
+                unitId: 2,
+                order: 10,
                 title: "Verbs",
             },
         ]);
@@ -695,6 +729,255 @@ const main = async () => {
             },
         ]);
 
+        await db.insert(schema.challenges).values([
+            {
+              id: 22,
+              lessonId: 7, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: "How do you say 'Yes' in Igbo?",
+            },
+            {
+                id: 23,
+                lessonId: 7, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: "How do you say 'No' in Igbo?",
+            },
+            {
+                id: 24,
+                lessonId: 7, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: "How do you say 'Please' in Igbo?",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 22,
+                correct: true,
+                text: "Ee",
+                audioSrc: "/Ee.mp3",
+            },
+            {
+                challengeId: 22,
+                correct: false,
+                text: "Mba",
+                audioSrc: "/Mba.mp3",
+            },
+            {
+                challengeId: 22,
+                correct: false,
+                text: "Biko",
+                audioSrc: "/Biko.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 23,
+                correct: false,
+                text: "Ee",
+                audioSrc: "/Ee.mp3",
+            },
+            {
+                challengeId: 23,
+                correct: true,
+                text: "Mba",
+                audioSrc: "/Mba.mp3",
+            },
+            {
+                challengeId: 23,
+                correct: false,
+                text: "Biko",
+                audioSrc: "/Biko.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 24,
+                correct: false,
+                text: "Ee",
+                audioSrc: "/Ee.mp3",
+            },
+            {
+                challengeId: 24,
+                correct: false,
+                text: "Mba",
+                audioSrc: "/Mba.mp3",
+            },
+            {
+                challengeId: 24,
+                correct: true,
+                text: "Biko",
+                audioSrc: "/Biko.mp3",
+            },
+        ]);
+        await db.insert(schema.challenges).values([
+            {
+              id: 25,
+              lessonId: 8, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: "How do you say 'I don't understand' in Igbo?",
+            },
+            {
+                id: 26,
+                lessonId: 8, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: "How do you say 'Where are you going?' in Igbo?",
+            },
+            {
+                id: 27,
+                lessonId: 8, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: "How do you say 'I am hungry' in Igbo?",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 25,
+                correct: false,
+                text: "Ị na-aga ebee?",
+                audioSrc: "/whereyougoing.mp3",
+            },
+            {
+                challengeId: 25,
+                correct: true,
+                text: "Aghọtaghị m",
+                audioSrc: "/idntunderstand.mp3",
+            },
+            {
+                challengeId: 25,
+                correct: false,
+                text: "Agụụ na-ama m",
+                audioSrc: "/hungry.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 26,
+                correct: true,
+                text: "Ị na-aga ebee?",
+                audioSrc: "/whereyougoing.mp3",
+            },
+            {
+                challengeId: 26,
+                correct: false,
+                text: "Aghọtaghị m",
+                audioSrc: "/idntunderstand.mp3",
+            },
+            {
+                challengeId: 26,
+                correct: false,
+                text: "Agụụ na-ama m",
+                audioSrc: "/hungry.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 27,
+                correct: true,
+                text: "Agụụ na-ama m",
+                audioSrc: "/hungry.mp3",
+            },
+            {
+                challengeId: 27,
+                correct: false,
+                text: "Ị na-aga ebee?",
+                audioSrc: "/whereyougoing.mp3",
+            },
+            {
+                challengeId: 27,
+                correct: false,
+                text: "Aghọtaghị m",
+                audioSrc: "/idntunderstand.mp3",
+            },
+        ]);
+        await db.insert(schema.challenges).values([
+            {
+              id: 28,
+              lessonId: 9, // Verbs
+              type: "SELECT",
+              order: 1,
+              question: "How do you say 'What's your name?' in Igbo?",
+            },
+            {
+                id: 29,
+                lessonId: 9, // Verbs
+                type: "SELECT",
+                order: 2,
+                question: "How do you say 'I'm tired' in Igbo?",
+            },
+            {
+                id: 30,
+                lessonId: 9, // Verbs
+                type: "SELECT",
+                order: 3,
+                question: "How do you say 'Come here' in Igbo?",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 28,
+                correct: false,
+                text: "Agwụla m ike",
+                audioSrc: "/imtired.mp3",
+            },
+            {
+                challengeId: 28,
+                correct: false,
+                text: "Bịa ebe a",
+                audioSrc: "/comehere.mp3",
+            },
+            {
+                challengeId: 28,
+                correct: true,
+                text: "Kedu aha gị?",
+                audioSrc: "/whatsurname.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 29,
+                correct: true,
+                text: "Agwụla m ike",
+                audioSrc: "/imtired.mp3",
+            },
+            {
+                challengeId: 29,
+                correct: false,
+                text: "Bịa ebe a",
+                audioSrc: "/comehere.mp3",
+            },
+            {
+                challengeId: 29,
+                correct: false,
+                text: "Kedu aha gị?",
+                audioSrc: "/whatsurname.mp3",
+            },
+        ]);
+        await db.insert(schema.challengeOptions).values([
+            {
+                challengeId: 30,
+                correct: true,
+                text: "Bịa ebe a",
+                audioSrc: "/comehere.mp3",
+            },
+            {
+                challengeId: 30,
+                correct: false,
+                text: "Agwụla m ike",
+                audioSrc: "/imtired.mp3",
+            },
+            {
+                challengeId: 30,
+                correct: false,
+                text: "Kedu aha gị?",
+                audioSrc: "/whatsurname.mp3",
+            },
+        ]);
         console.log("Seeding finished")
     } catch (error) {
         console.error(error);
